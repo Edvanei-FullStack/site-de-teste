@@ -1,0 +1,71 @@
+<header>     <!-- Conteúdo semântico Cabeçalho--> 
+ </nav>  <!-- Conteúdo semântico navegação-->
+ <main>     <!-- Conteúdo semântico principal-->  
+<section> <!-- Conteúdo semântico Seção-->
+<article><!-- Conteúdo semântico Artigo-->
+<aside><!-- Conteúdo semântico Lateral-->
+<footer> Conteúdo semântico Roda pé
+
+🐍 Snake Case
+Formato: palavras separadas por underscores (_)
+Exemplo: minha_variavel_exemplo
+Uso comum: linguagens como Python, Ruby, e algumas convenções de bancos de dados.
+
+🐫 Camel Case
+Formato: palavras juntas, com a primeira letra de cada palavra (exceto a primeira) em maiúscula.
+Exemplo: minhaVariavelExemplo
+Uso comum: JavaScript, Java, C#, e outras linguagens orientadas a objetos.
+
+Toda pagina CSS vai conter essa triagem 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+
+display: flex; ou display: inline-flex;
+
+flex-direction: row | column | row-reverse | column-reverse 
+
+--between | space-around | space-evenly
+
+
+align-items: stretch | flex-start | flex-end | center | baseline
+
+flex-wrap: nowrap | wrap | wrap-reverse
+
+flex: define como o item cresce, encolhe e sua base
+
+
+
+/*grow / shrink / basis*/
+    flex: 1 0 100px;
+
+    
+item {
+  flex-grow: 1;    /* cresce para ocupar espaço extra */
+  flex-shrink: 1;  /* encolhe se necessário */
+  flex-basis: 100px; /* tamanho inicial */
+}
+
+
+grow "1" vai crecer
+
+O valor padrão é 0, o que significa que o item não cresce além do seu tamanho original.
+Um valor maior que 0 permite que o item cresça. Por exemplo:
+Se três itens têm flex-grow: 1, eles dividem igualmente o espaço extra.
+Se um item tem flex-grow: 2 e os outros dois têm 1, o primeiro item ocupará o dobro do espaço dos outros.
+
+
+Shrink "1"  A propriedade flex-shrink no CSS define quanto um item flexível pode encolher quando o espaço no contêiner é insuficiente.
+
+
+basis - determina o inicio.
+
+
+
+
+
+
+
+
